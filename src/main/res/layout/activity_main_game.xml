@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id = "@+id/gameLayout"
+    android:orientation="vertical"
+    tools:context=".MainGameActivity">
+
+    <TextView
+        android:id="@+id/scoreText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginStart="0dp"
+        android:textColor="@color/black"
+        android:translationZ="100dp"
+        android:textSize="40sp"
+        android:text="@string/score" />
+
+    <TextView
+        android:id="@+id/livesText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="50dp"
+        android:text="Lives: "
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        android:translationZ="100dp" />
+
+    <ImageView
+        android:id="@+id/goalTile"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="2dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/goal" />
+
+    <ImageView
+        android:id="@+id/riverTile"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="fitXY"
+        android:layout_below="@id/goalTile"
+        android:src="@drawable/river" />
+
+    <ImageView
+        android:id="@+id/safe1Tile"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:scaleType="fitXY"
+        android:layout_below="@id/riverTile"
+        android:src="@drawable/safe" />
+
+    <ImageView
+        android:id="@+id/roadTile"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="fitXY"
+        android:layout_below="@id/safe1Tile"
+        android:src="@drawable/road" />
+
+
+    <ImageView
+        android:id="@+id/safe2Tile"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:layout_below="@id/roadTile"
+        android:src="@drawable/safe" />
+
+    <ImageView
+        android:id="@+id/sprite"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="700dp"
+        android:layout_marginStart="0dp"
+        android:src="@drawable/all" />
+
+</RelativeLayout>
